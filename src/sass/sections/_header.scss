@@ -1,5 +1,70 @@
-.section--header{
-    & h1{
-    	color: gray;
+.header{
+	background-image: url(../img/header-bg.png);
+	background-size: cover;
+	border-top: 10px solid #2ecc71;
+	color: #fff;
+	padding-bottom: 170px;
+    position: relative;
+    overflow-x: hidden;
+    
+    &__logo{
+        font-family: 'Pacifico';
+        font-size: 60px;
+        margin-top: 170px;
+    }
+
+    & .dot{
+        color: #2ecc71;
+    }
+    
+    &__info{
+        font-size: 24px;
+        font-family: 'helvetica';
+        margin-top: 40px;
+        width: 50%;
+    }
+    &__icons{
+        margin-top: 25px;    
+    }
+    &__icon{
+        display: block;
+        float: left;
+        padding: 14px 18px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 100%;
+        margin-right: 15px;
+        transition: 0.2s ease-in;
+
+        &:hover{
+            background-color: #2ecc71;
+            transform: scale(1.1);
+        }
+    }
+    &__hand-container{
+        width: 525px;
+        height: 507px;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-image: url(../img/hand.png);
+        bottom: 0;
+        right: -550px;
+        transition: 0.8s ease-in-out;
+    }
+    &__display{
+        background-image: url(../img/display.png);
+        width: 163px;
+        position: absolute;
+        height: 245px;
+        top: 66px;
+        left: 66px;
+    }
+    &__lighting{
+        background-image: url(../img/lighting.png);
+        width: 68px;
+        position: absolute;
+        height: 204px;
+        top: 66px;
+        left: 66px;
     }
 }
