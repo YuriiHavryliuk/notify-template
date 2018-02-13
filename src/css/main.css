@@ -415,6 +415,10 @@ th {
   margin: 0 auto;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 @font-face {
   font-family: 'helvetica-neue';
   src: url("../font/helvetica-neue.ttf");
@@ -639,6 +643,138 @@ th {
   background-color: #fff;
   width: 100%;
   height: 100%;
+}
+
+.comments {
+  text-align: center;
+}
+
+.comment__text {
+  font-size: 16px;
+  color: #848484;
+  font-family: 'helvetica';
+  font-style: italic;
+  width: 65%;
+  line-height: 24px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.comment__name {
+  font-family: 'Raleway';
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+  color: black;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.comment__faces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  position: relative;
+}
+
+.comment__faces:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(4%, rgba(255, 255, 255, 0)), color-stop(96%, rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 96%, white 100%);
+}
+
+.comment__face {
+  width: 50px;
+  height: 50px;
+  background-color: #1c7a44;
+}
+
+.comment__img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+.comment__img:hover {
+  opacity: 0.5;
+}
+
+.social {
+  margin-top: 60px;
+}
+
+.social__links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social__desc {
+  color: gray;
+}
+
+.social img {
+  vertical-align: middle;
+}
+
+.social__link {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #d4d4d4;
+  line-height: 34px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  margin: 0 5px;
+}
+
+.social__link:hover {
+  background-color: #62d995;
+}
+
+.footer {
+  background-color: #e3e3e3;
+  text-align: center;
+}
+
+.footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .menu__link {
+  color: #848484;
+  font-size: 16px;
+  font-family: 'helvetica';
+  text-decoration: none;
+}
+
+.footer .container-footer {
+  width: 50%;
 }
 
 @media (min-width: 1200px) {

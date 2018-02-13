@@ -1,0 +1,25 @@
+.footer{
+	background-color: #e3e3e3;
+    text-align: center;
+    
+
+    & .menu{
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    & .menu__link{
+        color: #848484;
+        font-size: 16px;
+        font-family: 'helvetica';
+        text-decoration: none;
+        
+    }
+    & .container-footer{
+        width: 50%;
+    }
+}
+
