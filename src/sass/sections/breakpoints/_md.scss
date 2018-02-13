@@ -3,4 +3,33 @@
     .container{
 		width: 720px;
     }
+    .header__hand-container{
+      display: none;
+    }
+    .header__info{
+      width: 80% !important;
+    }
+    .container-header {
+      padding-left: 70px !important;
+  }
+  .container-subscribe{
+    flex-direction: column !important;
+  }
+  .subscribe__form {
+    display: inline-flex !important;
+  }
+  .subscribe__wrap{
+    width: 100% !important;
+    margin-bottom: 30px !important;
+  }
+  .comment__text{
+    width: 100%;
+  }
+  .comment__face {
+    margin: 3px;
+    flex: 58px;
+}
+.footer .container-footer {
+  width: 90%;
+}
 }

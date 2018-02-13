@@ -16,6 +16,10 @@
         font-size: 16px;
         font-family: 'helvetica';
         text-decoration: none;
+
+        &:hover{
+            opacity: 0.7;
+        }
         
     }
     & .container-footer{

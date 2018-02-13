@@ -5,4 +5,40 @@
     .container{
         width: 540px;
     }
+    .header__hand-container {
+        display: none;
+    }
+    .header .container-header {
+        padding-left: 0;
+    }
+    .header__info{
+        width: 100%;
+    }
+
+    .container-info{
+        flex-direction: column !important;
+    }
+    .info__item {
+        margin: 0;
+    }
+    .subscribe__form {
+        display: inline-flex !important;
+      }
+      .subscribe__wrap{
+        width: 100% !important;
+        margin-bottom: 30px !important;
+      }
+      .comment__text{
+        width: 100%;
+      }
+      .container-subscribe{
+        flex-direction: column !important;
+      }
+      .container-footer {
+        width: 95% !important;
+    }
+    .comment__face {
+        flex: 47px;
+        margin: 1px;
+    }
 }

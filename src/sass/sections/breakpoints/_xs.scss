@@ -1,7 +1,60 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
 	.container{
-		width: 100%;
+		width: 95%;
 	}
+	.header{
+		padding: 40px;
 
+		&__logo{
+			margin-top: 20px;
+		}
+	}
+    .header__hand-container {
+        display: none;
+    }
+    .header .container-header {
+        padding-left: 0;
+    }
+    .header__info{
+        width: 100%;
+    }
+
+    .container-info{
+        flex-direction: column !important;
+    }
+    .info__item {
+        margin: 0;
+    }
+    .subscribe__form {
+        display: inline-flex !important;
+	  }
+	  .subscribe__video{
+		width: 310px;
+		height: 174px;
+    }
+      .subscribe__wrap{
+        width: 100% !important;
+		margin-bottom: 30px !important;
+		padding: 5px;
+	  }
+	  .subscribe__inp--email{
+		  width: 190px;
+	  }
+	  .subscribe__btn {
+		  width: 90px;
+		  left: 220px;
+	  }
+      .comment__text{
+        width: 100%;
+      }
+      .container-subscribe{
+        flex-direction: column !important;
+      }
+      .container-footer {
+        width: 95% !important;
+    }
+	.footer .menu{
+		flex-flow: row wrap;
+	}
 }
